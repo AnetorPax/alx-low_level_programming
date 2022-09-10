@@ -1,7 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
-
 /**
  * Main - print a test depending on the number
  * 
@@ -12,23 +11,25 @@ int main (void)
 	{
 		int n;
 		/**
-		 * *initialize random number
-		 * *
+		 * * main - Prints if number is positive, zero or negative*
+		 * 
 		 *
 		 * */
 
-		srand ( time(0) );
+		srand(time(0));
 
-		/* Generate a random number: */
+		/* Generate a random number: 
+		 *
+		 * */
 
 		n = rand() - RAND_MAX / 2;
 
-		if (n > 0)
+		if(n > 0)
 		{
 			printf("%d is positive\n", n);
 		}
 
-		else if (n == 0)
+		else if(n == 0)
 		{
 			printf("%d is zero\n", n);
 		}
@@ -36,6 +37,6 @@ int main (void)
 		{
 			printf("%d is negative\n", n);
 		}
-		return 0;
+		return(0);
 	}
 
