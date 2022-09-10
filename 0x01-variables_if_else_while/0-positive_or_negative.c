@@ -5,7 +5,7 @@
 /**
  * *main - print if number is positive, zero or negative
  *
- * *return: Your text
+ * *return: Successful
  */
 
 int main(void)
@@ -13,9 +13,8 @@ int main(void)
 		int n;
 
 		srand(time(0));
-		
-		/*Generate a random number
-		 */
+
+		/*Generate a random number*/
 
 		n = rand() - RAND_MAX / 2;
 
