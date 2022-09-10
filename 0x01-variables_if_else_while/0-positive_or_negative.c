@@ -3,9 +3,9 @@
 #include<time.h>
 
 /**
- * *Main - print if number is positive, zero or negative
+ * *main - print if number is positive, zero or negative
  *
- * *Return: Your text
+ * *return: Your text
  */
 
 int main(void)
@@ -14,9 +14,8 @@ int main(void)
 
 		srand(time(0));
 		
-		/**Generate a random number
-		 **
-		*/
+		/*Generate a random number
+		 */
 
 		n = rand() - RAND_MAX / 2;
 
