@@ -3,23 +3,23 @@
 #include<time.h>
 /**
  * Main - print a test depending on the number
- * 
- * Return: Your text
+ * *
+ * * Return: Your text
  */
 
-int main (void)
+int main(void)
 	{
 		int n;
-		/* *
-		 * * main - Prints if number is positive, zero or negative
-		 * * Return : Success()
-		 */
+		/**
+		 *Main - Prints if number is positive, zero or negative
+		 *Return : Success()
+		*/
 
 		srand(time(0));
-
-		/* * Generate a random number: 
-		 *
-		 */
+		
+		/**Generate a random number
+		 **
+		*/
 
 		n = rand() - RAND_MAX / 2;
 
