@@ -2,7 +2,7 @@
 #include<stdlib.h>
 
 /**
- * mains - Prints simgle digits number in ascending order
+ * main - Prints simgle digits number in ascending order
  * Return: Always(successful)
  *
  */
@@ -11,7 +11,7 @@ int main(void)
 {
 	int c;
 
-	for (c = 'a'; c <= '9'; c++)
+	for (c = '0'; c <= '9'; c++)
 	{
 		putchar(c);
 
