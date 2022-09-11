@@ -3,7 +3,7 @@
 #include<time.h>
 
 /**
- *Main - 'Prints a text according to number'
+ *Main - print the last digit of the number stored
  *Description: Print text according to number
  *Return: Always(Success)
  */
