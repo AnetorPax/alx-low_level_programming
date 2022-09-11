@@ -1,5 +1,5 @@
 #include<stdio.h>
-/*
+/**
  * *main - Prints alphbeths in lower case and upper case
  * Return: Always (successful)
  */
