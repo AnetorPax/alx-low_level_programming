@@ -2,7 +2,7 @@
 #include<stdlib.h>
 /**
  * main - Prints 3 digits numbers
- * Recovery: Always(successful)
+ * Return: Always(successful)
  *
  */
 int main(void)
