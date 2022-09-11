@@ -3,8 +3,8 @@
 #include<time.h>
 
 /*
- * Main - Prints a text according to number
- * *Description: Print text according to number 
+ *Main - 'Prints a text according to number'
+ *Description: Print text according to number
  *Return: Always(Success)
  */
 int main(void)
