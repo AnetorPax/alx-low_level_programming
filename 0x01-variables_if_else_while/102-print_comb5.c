@@ -18,6 +18,7 @@ int main(void)
 				putchar((i / 10) + 48);
 				putchar((i % 10) + 48);
 				putchar((q / 10) + 48);
+				putchar(' ');
 				putchar((q % 10) + 48);
 				if (i != 98 || q != 99)
 				{
