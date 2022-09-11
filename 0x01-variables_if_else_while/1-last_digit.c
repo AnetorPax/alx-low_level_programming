@@ -2,10 +2,10 @@
 #include<stdlib.h>
 #include<time.h>
 
-/* *
- * *main - Prints a text according to number
+ /* 
+ *main - Prints a text according to number
  * *
- * * Return:Always (Success)
+ *Return: Always(Success)
  */
 int main(void)
 {
@@ -17,7 +17,7 @@ int main(void)
 
 	if (lastd > 5)
 	{
-		printf("Last digit of %d is %d and is greater than 5/n", n, lastd);
+		printf("Last digit of %d is %d and is greater than 5\n", n, lastd);
 	}
 	else if (lastd == 0)
 	{
