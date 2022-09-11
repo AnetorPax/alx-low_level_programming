@@ -1,6 +1,6 @@
 #include<stdio.h>
 /*
- * main - Prints alphbeths in lower case and upper case
+ * *main - Prints alphbeths in lower case and upper case
  * Return: Always (successful)
  */
 int main(void)
@@ -11,7 +11,7 @@ int main(void)
 	{
 		putchar(c);
 	}
-	
+
 	for (c = 'A'; c <= 'Z'; c++)
 	{
 		putchar(c);
