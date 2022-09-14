@@ -1,6 +1,5 @@
 #include <stdio.h>
 /**
- *
  * main - computes and prints the sum of multiples of 3 and 5 below 1024
  * Return: Always(successful)
  */
