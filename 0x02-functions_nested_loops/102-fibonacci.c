@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - prints the first 50 fib numbers 
+ * main - prints the first 50 fib numbers
  * Return: Always (successful)
  */
 int main(void)
@@ -16,7 +16,7 @@ int main(void)
 		{
 			printf("%ld, ", j);
 		}
-		else 
+		else
 		{
 			printf("%ld\n", j);
 		}
