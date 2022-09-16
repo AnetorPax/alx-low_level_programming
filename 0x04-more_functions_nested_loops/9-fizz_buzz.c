@@ -2,9 +2,14 @@
 #include <stdio.h>
 /**
  * main - prints the numbers from 1 to 100, followed by a new line.
+ * for multiples of three print Fizz
+ * for the multiples of five print Buzz
+ * multiples of both three and five print FizzBuzz
  * Each number or word should be separated by a space
  * Return: Always (Successful)
  */
+
+
 int main(void)
 {
 	int i;
@@ -34,6 +39,7 @@ int main(void)
 	}
 
 	printf("\n");
+
 	return (0);
 }
 
