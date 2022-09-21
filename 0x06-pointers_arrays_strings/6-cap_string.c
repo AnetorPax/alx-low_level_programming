@@ -1,6 +1,6 @@
 #include"main.h"
 /**
- * *cap_string - capitalize every element of a string
+ * cap_string - capitalize every element of a string
  * @s: string to modify
  * Return: resulting string
  */
