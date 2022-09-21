@@ -1,6 +1,6 @@
 #include"main.h"
 /**
- * _strncat - Prints the result of concatenating 2 steings
+ * *_strncat - Prints the result of concatenating 2 steings
  * @dest: destination string 
  * @src: source string
  * @n: number of byte of source string to concate
