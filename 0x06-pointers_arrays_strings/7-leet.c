@@ -1,7 +1,7 @@
 #include"main.h"
 /**
  * leet - encodes a syring 1337
- * @a: string to encoded 
+ * @a: string to encoded
  * Return: the resulting string
  */
 
