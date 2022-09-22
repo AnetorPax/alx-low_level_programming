@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_number(int n) - prints an integer.
+ * print_number - prints an integer.
  * @n: the integer to be pointed
  * Return: Sucess
  */
