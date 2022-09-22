@@ -3,7 +3,7 @@
 char *add_strings(char *n1, char *n2, char *r, int r_index);
 char *infinite_add(char *n1, char *n2, char *r, int size_r);
 /**
- * add_strings - Add the numbers stored in 2 strings 
+ * add_strings - Add the numbers stored in 2 strings
  * @n1: The string containing the first number
  * @n2: The string containing the second number
  * @r: The buffer to store the result
@@ -64,7 +64,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		n1_len++;
 	for (index = 0; *(n2 + index); index++)
 		n2_len++;
-	
+
 	if (size_r <= n1_len + 1 || size_r <= n2_len + 2)
 		return (0);
 
