@@ -2,9 +2,9 @@
 
 /**
  * cap_string - the function capitalizes all words of a string
- * @spe: the string to modify
+ * @s: the string to modify
  *
- * Return: the resulting string
+ * Return: successful
  */
 
 char *cap_string(char *s)
