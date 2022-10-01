@@ -1,7 +1,7 @@
 #include<stdio.h>
 /**
  * main - prints all arguements it recieves
- * @argc: number of arguements 
+ * @argc: number of arguements
  * @argv: array of arguememts
  * Return: Always(successful)
  */
