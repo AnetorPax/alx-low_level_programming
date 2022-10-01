@@ -2,8 +2,8 @@
 /**
  * main - prints the number of arguments passed
  * @argc: number of arguements
- * @argv: array of arguements 
- * Return: Always (successful)
+ * @argv: array of arguements
+ * Return: Always 0 (successful)
  */
 int main(int argc, char *argv[] __attribute__((unused)))
 {
