@@ -2,8 +2,8 @@
 #include "main.h"
 /**
  * main -Prints the name of the program
- * @argc: number the arguments 
- * @argv: array of arguments 
+ * @argc: number the arguments
+ * @argv: array of arguments
  * Return: Always(successful)
  */
 
