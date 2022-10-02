@@ -45,7 +45,7 @@ int _atoi(char *s)
 	return (n);
 }
 /**
- * main - adds two positive numbers 
+ * main - adds two positive numbers
  * @argc: number of arguements
  * @argv: array of arguements
  * Retun: 0 (Success), or 1 (Error)
