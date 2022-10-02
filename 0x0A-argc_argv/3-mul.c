@@ -1,8 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 /**
- * main - prints its name 
- * @argc: number of arguements 
+ * main - prints its name
+ * @argc: number of arguements
  * @argv: array of arguements
  * Return: 0 (success), 1 (Error)
  */
