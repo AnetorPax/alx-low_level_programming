@@ -3,7 +3,7 @@
 /**
  * _atoi - converts a string to an integer
  * @s: string to be converted
- * Return: the converted int n
+ * Return: the converted int
  */
 int _atoi(char *s)
 {
@@ -44,6 +44,7 @@ int _atoi(char *s)
 
 	return (n);
 }
+
 /**
  * main - adds two positive numbers
  * @argc: number of arguements
@@ -60,7 +61,7 @@ int main(int argc, char *argv[])
 	{
 		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			if (argv[i][j] > '9' || argv[i][j] < '\0')
+			if (argv[i][j] > '9' || argv[i][j] < '0')
 			{
 				puts("Error");
 				return (1);
