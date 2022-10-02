@@ -4,7 +4,7 @@
 /**
  * main - this is the function to print its name
  * @argc: number of arguements
- * @argv: array of argments 
+ * @argv: array of argments
  * Return: 0 for success
  */
 
