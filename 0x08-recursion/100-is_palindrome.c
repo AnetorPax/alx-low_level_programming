@@ -25,7 +25,7 @@ int compares(char *s, int j1, int j2)
 	{
 		if (j1 == j2 || j1 == j2 + 1)
 			return (1);
-		return (0 + compares(s, j1 + 1, j2 -1));
+		return (0 + compares(s, j1 + 1, j2 - 1));
 	}
 	return (0);
 }
