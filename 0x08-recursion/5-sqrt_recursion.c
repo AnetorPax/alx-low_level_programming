@@ -9,7 +9,7 @@ int helper(int i, int j)
 {
 	if (j % (i / j) == 0)
 	{
-		if (j * (i / j) == 1)
+		if (j * (i / j) == i)
 			return (j);
 		else
 			return (-1);
@@ -19,7 +19,7 @@ int helper(int i, int j)
 
 /**
  * _sqrt_recursion - returns natural square root
- * @n: the number 
+ * @n: the number
  * Return: return natural square root of a number
  */
 int _sqrt_recursion(int n)
