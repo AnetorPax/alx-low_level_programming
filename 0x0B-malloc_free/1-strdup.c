@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * *_strdup - return a pointer that contains a copy 
+ * *_strdup - return a pointer that contains a copy
  * of a string given as its parameter
  * @str: string to duplicate
  * Return: pointer to house the string (sucess), NULL (Error)
@@ -25,7 +25,7 @@ char *_strdup(char *str)
 	if (dup == NULL)
 		return (NULL);
 
-	while((dup[i] = str[i]) != '\0')
+	while ((dup[i] = str[i]) != '\0')
 		i++;
 	return (dup);
 }
