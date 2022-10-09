@@ -2,7 +2,7 @@
 /**
  * *array_range - creates an array of integers
  * @min: minimum range of value stored
- * @max: maximum range of value stored 
+ * @max: maximum range of value stored
  * Return: Pointer or NULL
  */
 int *array_range(int min, int max)
