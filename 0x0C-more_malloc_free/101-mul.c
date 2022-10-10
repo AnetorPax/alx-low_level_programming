@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * is_digit - check string for non-digit char
- * @s: string to evaluate 
+ * @s: string to evaluate
  * Return: 0 if non-digit is found otherwise 1
  */
 int is_digit(char *s)
@@ -45,8 +45,8 @@ void errors(void)
 	exit(98);
 }
 /**
- * main - mulptiplies two positive numbers 
- * @argc: number of arguements 
+ * main - mulptiplies two positive numbers
+ * @argc: number of arguements
  * @argv: array of arguements
  * Return: Always 0 (success)
  */
