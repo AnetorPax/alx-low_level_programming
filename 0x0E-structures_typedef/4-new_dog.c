@@ -4,7 +4,9 @@
  * @name: name of the dog
  * @age: age of the dog
  * @owner: owner of the dog
- * Return: struct dog if successful otherwise NULL
+ * 
+ * Return: struct dog
+ * if successful otherwise NULL
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
