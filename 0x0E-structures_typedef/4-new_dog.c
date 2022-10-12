@@ -1,6 +1,6 @@
 #include "dog.h"
 /**
- * _strlen - returns thw length of a string
+ * _strlen - returns the length of a string
  * @s: the string to test
  * Return: length of a string
  */
@@ -19,7 +19,7 @@ int _strlen(char *s)
 }
 /**
  * *_strcpy - copies the string pointed to be src
- * including the terminating Null byte to the 
+ * including the terminating Null byte to the
  * buffer pointed to by dest
  * @src: source string to copy from
  * @dest: destination string to copy to
