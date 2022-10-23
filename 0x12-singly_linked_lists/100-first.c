@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-void first(void) __attribute__  ((constructor));
+void first(void) __attribute__ ((constructor));
 /**
- * first - ptints the sentence before main function is executed 
+ * first - prints the sentence before main function is executed
  */
 void first(void)
 {
