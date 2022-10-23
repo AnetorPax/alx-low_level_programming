@@ -10,7 +10,6 @@
  * Description: singly linked list node structure
  */
 
-#include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
 
