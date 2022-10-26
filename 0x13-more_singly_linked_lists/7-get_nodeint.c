@@ -9,9 +9,9 @@
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
 	unsigned int c = 0;
-
 	listint_t *headcp = head;
+
 	for (c = 0; (c < index) && headcp; c++)
-	headcp = headcp->next;
+		headcp = headcp->next;
 	return (headcp);
 }
