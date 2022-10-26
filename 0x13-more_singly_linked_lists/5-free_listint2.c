@@ -1,7 +1,8 @@
 #include "lists.h"
 
 /**
- * free_listint2 - function that frees a listint_t list
+ * free_listint2 - function that frees a listint_t listi
+ *
  * @head: type listint_t pointer to the head
  */
 void free_listint2(listint_t **head)
@@ -14,5 +15,6 @@ void free_listint2(listint_t **head)
 		free(headcp);
 		headcp = next;
 	}
+	
 	*head = NULL;
 }
