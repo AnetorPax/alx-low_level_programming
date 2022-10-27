@@ -11,7 +11,10 @@ int pop_listint(listint_t **head)
 	listint_t *headcp = *head, *next;
 
 	if (headcp == NULL)
+	{
 		return (0);
+	}
+	
 	else
 	{
 		value = headcp->n;
