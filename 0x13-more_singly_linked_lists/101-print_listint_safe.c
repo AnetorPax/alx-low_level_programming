@@ -1,7 +1,7 @@
 #include"lists.h"
 /**
  * print_listint_safe - prints a listint_t linked list
- * 
+ *
  * @head: pointer to the 1st node of the linked list
  * Return: New node
  */
@@ -31,7 +31,7 @@ size_t print_listint_safe(const listint_t *head)
 			new_n++;
 		}
 		if (!head)
-			exit (98);
+			exit(98);
 	}
 	return (counter);
 }
