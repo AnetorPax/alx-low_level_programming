@@ -15,7 +15,7 @@ int main(void)
 
 	printf("Size of a char: %d byte(s)\n", (int)A);
 	printf("Size of an int: %d byte(s)\n", (int)B);
-	printf("Size of a long int: %d bytes(s)\n", (int)C);
+	printf("Size of a long int: %d byte(s)\n", (int)C);
 	printf("Size of a long long int: %d byte(s)\n", (int)D);
 	printf("Size of a float: %d byte(s)\n", (int)E);
 
