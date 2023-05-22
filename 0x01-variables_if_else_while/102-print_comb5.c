@@ -20,11 +20,11 @@ int main(void)
 				putchar(' ');
 				putchar('0' + y / 10);
 				putchar('0' + y % 10);
-				if (x < 99 && y < 100)
-				{
-					putchar(',');
-					putchar(' ');
-				}
+			}
+			if (x < 99 && y < 100)
+			{
+				putchar(',');
+				putchar(' ');
 			}
 		}
 	}
