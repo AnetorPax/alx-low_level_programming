@@ -13,21 +13,18 @@ int main(void)
 	{
 		for (y = x; y <= 99; y++)
 		{
-			if (x != y)
+			putchar('0' + x / 10);
+			putchar('0' + x % 10);
+			putchar(' ');
+			putchar('0' + y / 10);
+			putchar('0' + y % 10);
+			if (x < 99)
 			{
-				putchar('0' + x / 10);
-				putchar('0' + x % 10);
+				putchar(',');
 				putchar(' ');
-				putchar('0' + y / 10);
-				putchar('0' + y % 10);
-				if (x < 99)
-				{
-					putchar(',');
-					putchar(' ');
-				}
 			}
 		}
 	}
 	putchar('\n');
-	return ('0');
+	return (0);
 }
