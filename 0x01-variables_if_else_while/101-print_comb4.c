@@ -12,20 +12,15 @@ int main(void)
 
 	for (x = 48; x <= 57; x++)
 	{
-		for (y = 48; y <= 57; y++)
+		for (y = x + 1; y <= 57; y++)
 		{
-			for (z = 48; z <= 57; z++)
+			for (z = y + 1; z <= 57; z++)
 			{
-				{
-					if (!(x == y && y == z && x == z))
-					{
-						putchar(x);
-						putchar(y);
-						putchar(z);
-						putchar(',');
-						putchar(' ');
-					}
-				}
+				putchar(x);
+				putchar(y);
+				putchar(z);
+				putchar(',');
+				putchar(' ');
 			}
 		}
 	}
