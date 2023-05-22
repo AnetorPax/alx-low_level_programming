@@ -9,17 +9,17 @@ int main(void)
 {
 	int x, y;
 
-	for (x = '0'; x <= 99; x++)
+	for (x = 0; x <= 99; x++)
 	{
 		for (y = x; y <= 99; y++)
 		{
 			if (x != y)
 			{
-				putchar(x / 10);
-				putchar(x % 10);
+				putchar('0' + x / 10);
+				putchar('0' + x % 10);
 				putchar(' ');
-				putchar(y / 10);
-				putchar(y % 10);
+				putchar('0' + y / 10);
+				putchar('0' + y % 10);
 				if (x < 99)
 				{
 					putchar(',');
