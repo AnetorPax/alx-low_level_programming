@@ -12,14 +12,14 @@ int main(void)
 
 	for (x = 48; x <= 57; x++)
 	{
-		for (y = x + 1; y <= 57; y++)
+		for (y = x + 49; y <= 57; y++)
 		{
-			for (z = y + 1; z <= 57; z++)
+			for (z = y + 49; z <= 57; z++)
 			{
 				putchar(x);
 				putchar(y);
 				putchar(z);
-				if (x == 7 && y == 8 && z == 9)
+				if (x == 55 && y == 56 && z == 57)
 				{
 					continue;
 				}
