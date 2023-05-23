@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
- * main - Prints all possible cobinatiions of two two-digit
- * numbers, the two numbers seperated by a space, printed in ascending
- * order
- * Return: Always 0
+ * main - Prints all possible combinations of two two-digit
+ * numbers, fulfilling certain conditions with the putchar function.
+ *
+ * Return: Always 0.
  */
 int main(void)
 {
@@ -15,19 +15,20 @@ int main(void)
 		{
 			if (x != y)
 			{
-				putchar('0' + x / 10);
-				putchar('0' + x % 10);
-				putchar(' ');
-				putchar('0' + y / 10);
-				putchar('0' + y % 10);
-			}
-			if (x < 99 && y < 100)
-			{
-				putchar(',');
-				putchar(' ');
+				putchar('0' + (x / 10));
+				putchar('0' + (x % 10));
+				putchar(32);
+				putchar('0' + (y / 10));
+				putchar('0' + (y % 10));
+				if (!(x == 98 && y == 99))
+				{
+					putchar(44);
+					putchar(32);
+				}
 			}
 		}
 	}
-	putchar('\n');
+
+	putchar(10);
 	return (0);
 }
