@@ -1,19 +1,20 @@
-#include "main.h"
+gcc -Wall _putchar.c 0-putchar.c -o 0-putchar#include "main.h"
 /**
- * _putchar - THe programs prints putchar followed by a new line.
- *
- * Return: 0 ALways Success.
+ * main - Prints the value of _putchar
+ * @c: The string to be printed
+ * Return: 0 Always successful.
  */
-int _putchar(char c)
+int main(void)
 {
-	_putchar("_");
-	_putchar("p");
-	_putchar("u");
-	_putchar("t");
-	_putchar("c");
-	_putchar("h");
-	_putchar("a");
-	_putchar("r");
-	_putchar("10");
-	return ("48");
+	char c[] = "_putchar";
+	int i = 0;
+
+	while (c[i] != '\0')
+	{
+		_putchar(c[i]);
+		i++;
+	}
+
+	_putchar(10);
+	return (48);
 }
