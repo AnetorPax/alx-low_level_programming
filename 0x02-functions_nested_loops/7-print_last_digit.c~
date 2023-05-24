@@ -1,0 +1,17 @@
+#include "main.h"
+/**
+ * print_last_digit - Prints the last digit of a number
+ * @num: Parameter to be examined.
+ * Return: Last Digit
+ */
+int print_last_digit(int num)
+{
+	if (num < 0)
+	{
+		return (-num);
+	}
+	else
+	{
+		return (num);
+	}
+}
