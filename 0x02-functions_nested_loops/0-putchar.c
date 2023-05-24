@@ -1,7 +1,7 @@
-gcc -Wall _putchar.c 0-putchar.c -o 0-putchar#include "main.h"
+#include "main.h"
 /**
  * main - Prints the value of _putchar
- * @c: The string to be printed
+ *
  * Return: 0 Always successful.
  */
 int main(void)
