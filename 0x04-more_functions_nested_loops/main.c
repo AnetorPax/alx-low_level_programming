@@ -8,6 +8,6 @@
  */
 int main(void)
 {
-	more_numbers();
+	print_most_numbers();
 	return (0);
 }
