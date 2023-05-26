@@ -17,7 +17,7 @@ long findLargestPrimeFactor(long number)
 
 	for (i = 3; i <= number; i += 2)
 	{
-		if (number % i == 0)
+		while (number % i == 0)
 		{
 			number /= i;
 		}
@@ -34,8 +34,9 @@ long findLargestPrimeFactor(long number)
 int main(void)
 {
 	long number = 612852475143;
+	long largestPrimeFactor;
 
-	long largestPrimeFactor = findLargestPrimeFactor(number);
+	largestPrimeFactor = findLargestPrimeFactor(number);
 
 	printf("%ld\n", largestPrimeFactor);
 
