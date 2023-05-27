@@ -3,13 +3,10 @@
 /**
  * print_times_table - Prints the n times table starting from 0
  * @n: The parameter to the function.
- *
  */
 void print_times_table(int n)
 {
-	int x;
-	int y;
-	int mul;
+	int x, y, mul;
 
 	if (n < 0 || n > 15)
 	{
@@ -20,18 +17,26 @@ void print_times_table(int n)
 		for (y = 0; y <= n; y++)
 		{
 			mul = x * y;
-			printf("%d", mul);
-			if ((mul >= 10) && (mul < 100) && (!(y == n)))
+			if ((mul >= 10) && (mul < 100))
 			{
-				printf(",  ");
+				if (y == n)
+					printf("  %d", mul);
+				else
+					printf("  %d,", mul);
 			}
-			else if ((mul < 10) && (!(y == n)))
+			else if (mul < 10)
 			{
-				printf(",   ");
+				if (y == n)
+					printf("   %d", mul);
+				else
+					printf("   %d,", mul);
 			}
-			else if ((mul > 99) && (!(y == n)))
+			else if (mul > 99)
 			{
-				printf(", ");
+				if (y == n)
+					printf(" %d", mul);
+				else
+					printf(" %d,", mul);
 			}
 		}
 		printf("\n");
