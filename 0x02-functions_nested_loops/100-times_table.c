@@ -17,29 +17,21 @@ void print_times_table(int n)
 		for (y = 0; y <= n; y++)
 		{
 			mul = x * y;
-			if ((mul >= 10) && (mul < 100))
+			if (y != 0)
 			{
-				if (y == n)
-					printf("  %d", mul);
-				else
-					printf("  %d,", mul);
+				printf("%3d", mul);
 			}
-			else if (mul < 10)
+			else
 			{
-				if (y == n)
-					printf("   %d", mul);
-				else
-					printf("   %d,", mul);
+				printf("%d", mul);
 			}
-			else if (mul > 99)
+
+			if (y != n)
 			{
-				if (y == n)
-					printf(" %d", mul);
-				else
-					printf(" %d,", mul);
+				printf(", ");
 			}
 		}
 		printf("\n");
 	}
-	printf("\n");
+	
 }
