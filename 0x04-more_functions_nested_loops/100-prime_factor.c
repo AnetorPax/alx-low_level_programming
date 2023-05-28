@@ -1,61 +1,46 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
+int largest_prime(long n);
+ /**
+  * main - Entry point
+  *
+  * Return: Always 0 (Success)
+  */
+ int main(void)
+ {
+         int prime;
+
+         prime = largest_prime(612852475143);
+         printf("%d\n", prime);
+         return (0);
+ }
+
 /**
- * largest_prime - prints the largest prime factor of a number.
- * @n: parameter to be examined.
- * Return: largest_prime
- */
-/**unsigned long largest_prime(unsigned long n)
-{
-	unsigned long prime;
-	unsigned largest_prime;
+  * largest_prime - Function that compute largest prime factor
+  * @n: parameter to calculate prime numbers on
+  *
+  * Return: The largest prime number
+  */
+ int largest_prime(long n)
+ {
+         int lprime, x = 2;
 
-	prime = 2;
-	largest_prime = 1;
-
-	while (prime * prime <= n)
-	{
-		if (n % prime == 0)
-		{
-			largest_prime = prime;
-			while (n % prime == 0)
-			{
-				n /= prime;
-			}
-		}
-		prime++;
-	}
-
-	if (n > largest_prime)
-	{
-		largest_prime = n;
-	}
-
-	return (largest_prime);
-}
-**/
-/**
- * main - find the highest prime factor of a number
- * Return: Always 0.
- */
-int main(void)
-{
-
-	long int n;
-	int prime;
-	int largest_prime_factor;
-
-	n = 612852475143;
-	for (prime = 2; n > 1; prime++)
-	{
-		while (n % prime == 0)
-		{
-			n = n / prime;
-		}
-	}
-	largest_prime_factor = prime - 1;
-	printf("%d\n", largest_prime_factor);
-
-	return (0);
-}
+         for (;;)
+         {
+                 if (n == 1)
+                 {
+                         return (lprime);
+                 }
+                 else
+                 {
+                         if (n % x == 0)
+                         {
+                                 lprime = x;
+                                 n /= x;
+                         }
+                         else
+                         {
+                                 x++;
+                         }
+                 }
+         }
+ }
