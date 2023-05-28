@@ -8,6 +8,14 @@ void print_number(int n)
 	int divisor;
 	int temp;
 
+
+
+	if (n > 0 && n < 10)
+	{
+		_putchar(n + '0');
+		return;
+	}
+
 	if (n < 0)
 	{
 		_putchar('-');
