@@ -17,7 +17,7 @@ void print_fibonacci_sequence(int n)
 
 	printf("%lu, %lu", fib1, fib2);
 
-	while (x < n)
+	while (x <= n)
 	{
 		fib = fib1 + fib2;
 		printf(", %lu", fib);
