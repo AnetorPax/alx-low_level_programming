@@ -18,7 +18,7 @@ int main(void)
 
 	printf("%lu, %lu", fib1, fib2);
 
-	for (x = 2; x <= n; x++)
+	for (x = 2; x < n; x++)
 	{
 		fib = fib1 + fib2;
 		printf(", %lu", fib);
