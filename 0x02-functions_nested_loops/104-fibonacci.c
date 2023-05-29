@@ -17,7 +17,9 @@ void print_fibonacci_sequence(int n)
 		fib = fib1 + fib2;
 		printf("%lu", fib);
 
-		if (n != 98)
+		if (n % 10 == 0 && n != 98)
+			printf(", \n");
+		else if (n != 98)
 			printf(", ");
 
 		fib1 = fib2;
