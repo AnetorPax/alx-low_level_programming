@@ -10,7 +10,8 @@ void print_rev(char *s)
 	int i;
 
 
-        /* Takes care of a NULL string */
+
+	/* Takes care for any NULL string input*/
 	if (s == NULL)
 	{
 		return;
