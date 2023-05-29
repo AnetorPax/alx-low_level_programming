@@ -5,26 +5,23 @@
  */
 void print_fibonacci_sequence(int n)
 {
-	int x;
-	unsigned long fib1;
-	unsigned long fib2;
-	unsigned long fib;
+	unsigned long fib1, fib2, fib;
 
-	x = 2;
 	fib1 = 1;
 	fib2 = 2;
-	fib = 0;
 
-	printf("%lu, %lu", fib1, fib2);
+	printf("%lu, %lu, ", fib1, fib2);
 
-	while (x < n)
+	for (n = 3; n <= 98; n++)
 	{
 		fib = fib1 + fib2;
-		printf(", %lu", fib);
+		printf("%lu", fib);
+
+		if (n != 98)
+			printf(", ");
 
 		fib1 = fib2;
 		fib2 = fib;
-		x++;
 	}
 
 	printf("\n");
