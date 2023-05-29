@@ -1,32 +1,41 @@
 #include <stdio.h>
+#include <gmp.h>
 /**
  * print_fibonacci_sequence - Prints the fibonacci sequence of n
  * @n: The parameter to be examined
  */
 void print_fibonacci_sequence(int n)
 {
-	unsigned long fib1, fib2, fib;
+	int i;
+	mpz_t prev, curr, next;
 
-	fib1 = 1;
-	fib2 = 2;
+	mpz_init_set_ui(prev, 1);
+	mpz_init_set_ui(curr, 2);
 
-	printf("%lu, %lu, ", fib1, fib2);
+	printf("%s, ", mpz_get_str(NULL, 10, prev));
+	printf("%s, ", mpz_get_str(NULL, 10, curr));
 
-	for (n = 3; n <= 98; n++)
+	for (i = 3; i <= n; i++)
 	{
-		fib = fib1 + fib2;
-		printf("%lu", fib);
+		mpz_init(next);
+		mpz_add(next, prev, curr);
 
-		if (n % 10 == 0 && n != 98)
-			printf(", \n");
-		else if (n != 98)
+		gmp_printf("%Zd", next);
+
+
+		if (i != n)
+		{
 			printf(", ");
+		}
 
-		fib1 = fib2;
-		fib2 = fib;
+		mpz_set(prev, curr);
+		mpz_set(curr, next);
+		mpz_clear(next);
 	}
-
 	printf("\n");
+
+	mpz_clear(prev);
+	mpz_clear(curr);
 }
 
 /**
