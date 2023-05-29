@@ -11,7 +11,7 @@ void print_rev(char *s)
 
 
         /* Takes care of a NULL string */
-	if ( s == NULL)
+	if (s == NULL)
 	{
 		return;
 	}
