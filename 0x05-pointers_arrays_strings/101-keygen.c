@@ -2,32 +2,23 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define PASSWORD_LENGTH 15
-
 /**
- * main - Generates a random valid password
- *
- * Return: Always 0
+ *main - generates random valid passwords
+ *Return: 0 (on success).
  */
 int main(void)
 {
-	char password[PASSWORD_LENGTH + 1];  /* +1 for null terminator */
-	const char charset[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-	int i;
+	int pass, sum;
 
-	/* Initialize the random number generator */
 	srand(time(NULL));
-
-	/* Generate random characters for the password */
-	for (i = 0; i < PASSWORD_LENGTH; i++)
+	sum = 0;
+	while (sum <= 2645)
 	{
-		password[i] = charset[rand() % (sizeof(charset) - 1)];
+		pass = (rand() % 128);
+		sum += pass;
+		printf("%c", pass);
 	}
+	printf("%c", 2772 - sum);
 
-	password[PASSWORD_LENGTH] = '\0';  /* Add null terminator */
-
-	/* Print the generated password */
-	printf("Generated password: %s\n", password);
-
-	return 0;
+	return (0);
 }
