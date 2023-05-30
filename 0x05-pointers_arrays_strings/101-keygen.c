@@ -21,7 +21,7 @@ int main(void)
 	/* Generate random characters for the password */
 	for (i = 0; i < PASSWORD_LENGTH; i++)
 	{
-		password[i] = charset[rand() % (sizeof(charset) / sizeof(char) - 1)];
+		password[i] = charset[rand() % (sizeof(charset) - 1)];
 	}
 
 	password[PASSWORD_LENGTH] = '\0';  /* Add null terminator */
