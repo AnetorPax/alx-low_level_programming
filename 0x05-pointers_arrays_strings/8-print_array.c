@@ -15,20 +15,21 @@ void print_array(int *a, int n)
 		return;
 
 	/* to print the  elements(n) in the array(a) */
-	if (n == 1)
+	for (i = 0; i < n; i++)
 	{
-		printf("%d", a[n]);
-	}
-	else
-	{
-		for (i = 0; i < n; i++)
+		if (i < n)
 		{
 			printf("%d", a[i]); /* prints each elements */
-
-			if (i != n - 1) /* printing comma and space */
 			{
-				printf(", ");
+				if (i != n) /*printing comma and space*/
+				{
+					printf(", ");
+				}
 			}
+		}
+		else if(i == n)
+		{
+			printf("%d", a[i]);
 		}
 	}
 
