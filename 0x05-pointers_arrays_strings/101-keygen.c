@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define PASSWORD_LENGTH 6
+#define PASSWORD_LENGTH 15
 
 /**
  * main - Generates a random valid password
