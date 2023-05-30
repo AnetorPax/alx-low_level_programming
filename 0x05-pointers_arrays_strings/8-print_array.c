@@ -7,12 +7,17 @@
  */
 void print_array(int *a, int n)
 {
-	int i;  /* Declaring Variable */
+	int i, j;  /* Declaring Variable */
 
 
 	/* To account for NULL array */
 	if (a == NULL || n <= 0)
 		return;
+
+	/*initializing the elements in the array*/
+	for (j = 0; j < n; j++)
+	{
+		a[j] = j + n;
 
 	/* to print the  elements(n) in the array(a) */
 	for (i = 0; i < n; i++)
