@@ -7,7 +7,9 @@ void rev_string(char *s)
 {
 	/* Declaring variables */
 	int len;
-	int i;
+	int start, end;
+	char temp;
+
 
 
 	/* To handle NULL input strings */
@@ -23,19 +25,15 @@ void rev_string(char *s)
 		len++;
 	}
 
-	/* Check if the last character is a newline character */
+	start = 0;
+	end = len - 1;
 
-	if (len > 0 && s[len - 1] == '\n')
+	while (start < end)
 	{
-		len--;           /*Reduce len value by 1 excluding the newline*/
-		s[len] = '\0';  /*Replace new line with a NULL character*/
+		temp = s[start];
+		s[start] = s[end];
+		s[end] = temp;
+		start++;
+		end--;
 	}
-
-	/* To print the string in reverse*/
-	for (i = len - 1; i >= 0; i--)
-	{
-		_putchar(s[i]);
-	}
-	_putchar('\n');
-	return;
 }
