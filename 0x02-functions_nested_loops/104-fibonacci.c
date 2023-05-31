@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - Prints the fibonacci sequence of n
- * @n: The parameter to be examined
+ * Return: 0 Always success
  */
 int main(void)
 {
