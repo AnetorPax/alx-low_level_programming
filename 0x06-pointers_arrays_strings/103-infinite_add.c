@@ -26,7 +26,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	for (i = len1 - 1, j = len2 - 1, k = max_len - 1; k >= 0; i--, j--, k--)
 	{
 		int digit1 = (i >= 0) ? n1[i] - '0' : 0;
-		int digit2 = (j >= 0) ? n2[i] - '0' : 0;
+		int digit2 = (j >= 0) ? n2[j] - '0' : 0;
 
 		sum = digit1 + digit2 + carry;
 		carry = sum / 10;
