@@ -19,7 +19,7 @@ char *cap_string(char *str)
 			*p = *p - ('a' - 'A'); /* Capitalize the current character */
 		}
 
-		/* To test if current character is a seperator */
+		/* Nested loop to test if current character is a seperator */
 		if (*p == ' ' || *p == '\t' || *p == '\n' || *p == ',' || *p == ';' ||
 		     *p == '.' || *p == '!' || *p == '?' || *p == '"' || *p == '(' ||
 		     *p == ')' || *p == '{' || *p == '}')
