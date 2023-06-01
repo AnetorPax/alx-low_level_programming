@@ -6,24 +6,25 @@
  */
 char *cap_string(char *str)
 {
-	char *p = str; /*declaring and intializing new pointer variable*/
-	int cap = 1; /*Capatalize flag to set next character to capitalize*/
+	char *p = str; /* declaring and intializing new pointer variable */
+	/* if cap = 1 prepare tp print next character */
+	int cap = 1; /* Capatalize flag to set next character to capitalize */
 
 
-	/*Loop to test and capitalize each character in the string*/
+	/* Loop to test and capitalize each character in the string */
 	while (*p != '\0')
 	{
 		if (cap && *p >= 'a' && *p <= 'z')
 		{
-			*p = *p - ('a' - 'A'); /* Capitalize the current character*/
+			*p = *p - ('a' - 'A'); /* Capitalize the current character */
 		}
 
-		/* To test if current character is a seperator*/
+		/* To test if current character is a seperator */
 		if (*p == ' ' || *p == '\t' || *p == '\n' || *p == ',' || *p == ';' ||
 		     *p == '.' || *p == '!' || *p == '?' || *p == '"' || *p == '(' ||
 		     *p == ')' || *p == '{' || *p == '}')
 		{
-			cap = 1; /*setting capitalize flag*/
+			cap = 1; /* setting capitalize flag */
 		}
 		else
 		{
