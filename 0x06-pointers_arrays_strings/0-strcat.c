@@ -7,7 +7,7 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	char *original_dest = dest;
+	char *originalDest = dest;
 
 	/*Finds the end of the destination string*/
 	while (*dest != '\0')
@@ -24,8 +24,7 @@ char *_strcat(char *dest, char *src)
 		src++;
 	}
 
-	*dest = '\0';
-	_putchar(*dest);
+	*dest = '\0'; /* Adds a null byte at then of the concatenated string*/
 
-	return (original_dest);
+	return (originalDest);
 }
