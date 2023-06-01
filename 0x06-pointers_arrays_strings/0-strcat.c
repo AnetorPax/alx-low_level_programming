@@ -7,24 +7,23 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	char *originalDest = dest;
+	char *p = dest; /*assigning a pointer variable to the destination*/
 
-	/*Finds the end of the destination string*/
-	while (*dest != '\0')
+	/*moves the pointer to the end of the destination string*/
+	while (*p != '\0')
 	{
-		dest++;
+		p++;
 	}
 
 	/* Copy the character in the src to dest */
 	while (*src != '\0')
 	{
-		*dest = *src;
-		_putchar(*dest);
-		dest++;
+		*p = *src;
+		p++;
 		src++;
 	}
 
-	*dest = '\0'; /* Adds a null byte at then of the concatenated string*/
+	*p = '\0'; /* Adds a null byte at then of the concatenated string*/
 
-	return (originalDest);
+	return (dest);
 }
