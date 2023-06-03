@@ -1,12 +1,13 @@
 #include <stdio.h>
 #include "main.h"
-int convert_day(int month, int day);
 
+
+int convert_day(int month, int day);
 /**
-* main - takes a date and prints how many days are left in the year, taking
-* leap years into account
-* Return: 0
-*/
+ * main - takes a date and prints how many days are left in the year, taking
+ * leap years into account
+ * Return: 0
+ */
 
 int main(void)
 {
@@ -15,9 +16,9 @@ int main(void)
 	int year;
 
 
-	month = 4;
-	day = 01;
-	year = 1997;
+	month = 2;
+	day = 29;
+	year = 2000;
 
 	printf("Date: %02d/%02d/%04d\n", month, day, year);
 
