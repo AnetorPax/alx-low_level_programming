@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 /**
- * is_palindrome_helper(char *s, int start, int end)
+ * is_palindrome_helper - help the is_palindrome function
  * @s: sting to be examined,
  * @start: beginning of our string
  * @end: end of our string
@@ -18,20 +18,32 @@ int is_palindrome_helper(char *s, int start, int end)
 
 	return (is_palindrome_helper(s, start + 1, end - 1));
 }
+
+/**
+ * get_string_len - cal length of the string
+ * @s: the string to be examined
+ * Return: 0
+ */
+int get_string_len(char *s)
+{
+	if (*s == '\0')
+		return (0);
+	return (1 + get_string_len(s + 1));
+}
+
 /**
  * is_palindrome - checks if a string is palindrome
  * @s: string to be examined
- * Returns: 1 if string is pallidrome and 0 if not
+ * Return: 1 if string is pallidrome and 0 if not
  */
 int is_palindrome(char *s)
 {
-	int end = 0;
+	int len = 0;
 
 	if (s[0] == '\0')
 		return (1);
 
-	while (s[end + 1] != '\0')
-		end++;
+	len = get_string_len(s);
 
-	return (is_palindrome_helper(s, 0, end));
+	return (is_palindrome_helper(s, 0, len - 1));
 }
