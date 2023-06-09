@@ -1,10 +1,10 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * wildcmp_helper - helps the wildcmp funstiion from the car
+ * wildcmp_helper - helps for recursion
  * @s1: the first string
  * @s2: the second string
- * Return: 1 if both string are identical, 0 if otherwise
+ * Return: 0
  */
 int wildcmp_helper(char *s1, char *s2)
 {
