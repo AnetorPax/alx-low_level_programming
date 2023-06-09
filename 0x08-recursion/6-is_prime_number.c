@@ -3,6 +3,7 @@
 /**
  * is_prime_helper - prints 1 if input is a prime number
  * @n: number to be examined
+ * @i: divisor for the recursion
  * Return: 0 Always success;
  */
 int is_prime_helper(int n, int i)
