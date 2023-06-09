@@ -19,6 +19,9 @@ int wildcmp_helper(char *s1, char *s2)
 	if (*s2 == '*')
 		return (wildcmp_helper(s1, s2 + 1) || wildcmp_helper(s1 + 1, s2));
 
+	if (*s1 == '\0' && *s2 != '\0' && *s2 != '*')
+		return (0);
+
 
 	/* If none of the conditions above are met, the strings are not identical */
 	return (0);
