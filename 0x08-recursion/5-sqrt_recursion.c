@@ -3,26 +3,19 @@
 /**
  * _sqrt_recursion_helper - helps use find square root recursively
  * @n: the number to be examined
- * @start: parameter to the function
- * @end: parameter to the function
+ * @guess: parameter to the function
  * Return: 0 Always Success
  */
-int _sqrt_recursion_helper(int n, int start, int end)
+int _sqrt_recursion_helper(int n, int guess)
 {
-	int mid;
 
-	if (start > end)
+	if (guess * guess == n)
+		return (guess);
+
+	if (guess * guess > n)
 		return (-1);
 
-	mid = (start + end) / 2;
-
-	if (mid * mid == n)
-		return (mid);
-
-	if (mid * mid < n)
-		return (_sqrt_recursion_helper(n, mid + 1, end));
-
-	return (_sqrt_recursion_helper(n, start, mid - 1));
+	return (_sqrt_recursion_helper(n, guess + 1));
 }
 
 /**
@@ -39,5 +32,5 @@ int _sqrt_recursion(int n)
 	if (n < 0)
 		return (-1);
 
-	return (_sqrt_recursion_helper(n, 1, n / 2 + 1));
+	return (_sqrt_recursion_helper(n, 0));
 }
