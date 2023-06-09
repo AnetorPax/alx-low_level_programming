@@ -26,14 +26,3 @@ int wildcmp(char *s1, char *s2)
 	/* If none of the conditions above are met, the strings are not identical */
 	return (0);
 }
-/**
- * wildcmp - compares 2 strings
- * @s1: first string
- * @s2: second string
- * Return: if both string are identical and 0 if otherwise.
-
-int wildcmp(char *s1, char *s2)
-{
-	return (wildcmp_helper(s1, s2));
-}
-*/
