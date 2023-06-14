@@ -21,14 +21,11 @@ char **strtow(char *str)
 	/* meeting string requirements */
 	if (str == NULL || *str == '\0')
 		return (NULL);
-	if (strlen(str) == 0)
-	{
-		words = malloc(sizeof(char *));
-		if (words == NULL)
-			return (NULL);
-		words[0] = NULL;
-		return (words);
-	}
+
+	while (*str == ' ')
+		str++;
+	if (*str == '\0')
+		return (NULL);
 
 	word_count = count_words(str);
 	words = allocate_memory(word_count);
