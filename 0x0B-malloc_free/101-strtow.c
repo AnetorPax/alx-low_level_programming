@@ -60,16 +60,19 @@ int count_words(char *str)
 	int count = 0;
 	int i = 0;
 	int len = 0;
+	int has_no_space = 0;
 
 	while (str[i] != '\0')
 	{
 		if (str[i] != ' ' && (str[i + 1] == ' ' || str[i + 1] == '\0'))
 			count++;
+		if (str[i] != ' ')
+			has_no_space = 1;
 		len++;
 		i++;
 	}
 
-	return (count);
+	return (has_no_space ? count: 0);
 }
 
 /**
