@@ -16,7 +16,7 @@ int **alloc_grid(int width, int height)
 		return (NULL);
 
 	/* Allocating memory to the rows of the grid */
-	grid = malloc(height * sizeof(int));
+	grid = malloc(height * sizeof(int *));
 
 	/* testing for memory allocation success */
 	if (grid == NULL)
