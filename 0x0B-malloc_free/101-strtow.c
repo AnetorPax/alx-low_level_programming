@@ -21,6 +21,14 @@ char **strtow(char *str)
 	/* meeting string requirements */
 	if (str == NULL || *str == '\0')
 		return (NULL);
+	if (strlen(str) == 0)
+	{
+		words = malloc(sizeof(char *));
+		if (words == NULL)
+			return (NULL);
+		words[0] = NULL;
+		return (words);
+	}
 
 	word_count = count_words(str);
 	words = allocate_memory(word_count);
@@ -60,19 +68,16 @@ int count_words(char *str)
 	int count = 0;
 	int i = 0;
 	int len = 0;
-	int has_no_space = 0;
 
 	while (str[i] != '\0')
 	{
 		if (str[i] != ' ' && (str[i + 1] == ' ' || str[i + 1] == '\0'))
 			count++;
-		if (str[i] != ' ')
-			has_no_space = 1;
 		len++;
 		i++;
 	}
 
-	return (has_no_space ? count: 0);
+	return (count);
 }
 
 /**
