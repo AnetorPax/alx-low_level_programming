@@ -12,8 +12,8 @@ void *malloc_checked(unsigned int b)
 
 	if (ptr == NULL)
 	{
-		printf("Unsuccessful: Failure, Exiting... \n");
-		exit (98);
+		printf("Error: Failure, Exiting... \n");
+		exit(98);
 	}
 
 	return (ptr);
