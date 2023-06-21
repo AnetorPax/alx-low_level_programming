@@ -1,9 +1,10 @@
 #include "3-calc.h"
+
 /**
  * op_add - adds two integer numbers
  * @a: first interger
  * @b: second integer
- * Return: Interger varaible Sum
+ * Return: Sum of a and b
  */
 int op_add(int a, int b)
 {
@@ -12,6 +13,7 @@ int op_add(int a, int b)
 	Sum = a + b;
 	return (Sum);
 }
+
 /**
  * op_sub - Outputs the difference between two integers
  * @a: first interger
@@ -25,11 +27,12 @@ int op_sub(int a, int b)
 	diff = a - b;
 	return (diff);
 }
+
 /**
  * op_mul - Multiplies two integers
  * @a: first interger
  * @b: second integer
- * Return: product of both integers
+ * Return: product of a and b
  */
 int op_mul(int a, int b)
 {
@@ -38,6 +41,7 @@ int op_mul(int a, int b)
 	mul = a*b;
 	return (mul);
 }
+
 /**
  * op_div - Outputs the division of a by b
  * @a: first integer
@@ -51,6 +55,7 @@ int op_div(int a, int b)
 	div = a / b;
 	return (div);
 }
+
 /**
  * op_mod - outputs the remainder of a divided by b
  * @a: first parameter
