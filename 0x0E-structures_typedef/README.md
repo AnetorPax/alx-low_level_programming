@@ -1,0 +1,1 @@
+THe directory contains files that explain how structures are created
