@@ -1,15 +1,26 @@
-	SECTION .data
-	msg:	db "Hello, Holberton", 0
-	fmt:	db "%s", 10, 0
+	section .data
+	    format db "Hello, Holberton", 0
+	    newline db 10, 0
 
-	SECTION .text
+	section .text
 	extern printf
+
 	global main
 	main:
-	mov esi, msg
-	mov edi, fmt
-	mov eax, 0
-	call printf
+	    sub rsp, 8                   ; Align the stack
 
-	mov eax, 0
-	ret
+	    ; Call printf with the format string
+	    lea rdi, [format]
+	    xor eax, eax                 ; Set the floating-point register to 0
+	    call printf
+
+	    ; Call printf with the new line string
+	    lea rdi, [newline]
+	    xor eax, eax
+	    call printf
+
+	    add rsp, 8                   ; Restore the stack
+
+	    ; Exit the program
+	    xor eax, eax
+	    ret
