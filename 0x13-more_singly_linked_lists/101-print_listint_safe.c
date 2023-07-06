@@ -10,47 +10,29 @@ size_t print_listint_safe(const listint_t *head)
 {
 	size_t count = 0;
 	const listint_t *current = head;
-	const listint_t *next = NULL;
-	const listint_t **visited = NULL; /* Hash table for visited nodes */
+	const listint_t *visited = NULL; /* Hash table for visited nodes */
 	size_t i;
 
-	visited = malloc(sizeof(const listint_t *) * count);
-	if (visited == NULL)
-	{
-		printf("Error: Memory allocation failed\n");
-		exit(1);
-	}
-
-	while (current != NULL)
+	while (current)
 	{
 		printf("[%p] %d\n", (void *)current, current->n);
 		count++;
-
-		/* Check if current node is in the hash table */
-		for (i = 0; i < count - 1; i++)
+		current = current->next;
+		visited = head;
+		i = 0;
+		while (i < count)
 		{
-			if (visited[i] == current)
+			if (current == visited)
 			{
-				printf("-> [%p] %d\n", (void *)current->next, current->next->n);
-				printf("-> Loop detected, exiting...\n");
-				free(visited);
-				exit(98);
+				printf("-> [%p] %d\n", (void *)current, current->n);
+				return (count);
 			}
+			visited = visited->next;
+			i++;
 		}
-
-		visited = realloc(visited, sizeof(const listint_t *) * count);
-		if (visited == NULL)
-		{
-			printf("Error: Memory allocation failed\n");
-			exit(1);
-		}
-
-		visited[count - 1] = current; /* Add current node to the hash table */
-
-		next = current->next;
-		current = next;
+		if (!head)
+			exit(98);
 	}
 
-	free(visited);
-	return count;
+	return (count);
 }
