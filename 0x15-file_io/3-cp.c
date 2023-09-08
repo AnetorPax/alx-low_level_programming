@@ -3,7 +3,7 @@
 /**
  * check_arguments - Checks if command-line arguments are valid.
  * @argc: Number of arguments.
- * @argv: Arguments vector.
+ *
  *
  * Return: 1 if valid, 0 if not.
  */
